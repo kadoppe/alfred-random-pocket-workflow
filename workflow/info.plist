@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.kadoppe.alfred-random-pocket-workflow</string>
+	<key>connections</key>
+	<dict>
+		<key>04E3E92D-440D-4EC0-9596-61C17850DDAC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4634E582-C818-4322-8EF0-48B27B039808</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>399852BC-7A45-48C8-87AC-CB1D517F985B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4634E582-C818-4322-8EF0-48B27B039808</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Kohei Kadowaki</string>
+	<key>description</key>
+	<string>Search and randomly select URLs in Pocket</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Random Pocket</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>keyword</key>
+				<string>pocs</string>
+				<key>runningsubtext</key>
+				<string>Seaching for &quot;{query}&quot;</string>
+				<key>script</key>
+				<string>/usr/bin/ruby main.rb {query}</string>
+				<key>subtext</key>
+				<string>Search Pocket for &quot;{query}&quot;</string>
+				<key>title</key>
+				<string>Search Pocket</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>399852BC-7A45-48C8-87AC-CB1D517F985B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>4634E582-C818-4322-8EF0-48B27B039808</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>126</integer>
+				<key>keyword</key>
+				<string>pocr</string>
+				<key>runningsubtext</key>
+				<string>Seaching for &quot;{query}&quot;</string>
+				<key>script</key>
+				<string>/usr/bin/ruby main.rb {query} --random</string>
+				<key>subtext</key>
+				<string>Search Pocket for &quot;{query}&quot;</string>
+				<key>title</key>
+				<string>Search Pocket Randomly</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>04E3E92D-440D-4EC0-9596-61C17850DDAC</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>uidata</key>
+	<dict>
+		<key>04E3E92D-440D-4EC0-9596-61C17850DDAC</key>
+		<dict>
+			<key>ypos</key>
+			<real>130.0</real>
+		</dict>
+		<key>399852BC-7A45-48C8-87AC-CB1D517F985B</key>
+		<dict>
+			<key>ypos</key>
+			<real>10.0</real>
+		</dict>
+		<key>4634E582-C818-4322-8EF0-48B27B039808</key>
+		<dict>
+			<key>ypos</key>
+			<real>10.0</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/kadoppe/alfred-random-pocket-workflow</string>
+</dict>
+</plist>

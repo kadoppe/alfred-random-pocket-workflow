@@ -1,0 +1,21 @@
+## workflow build config
+
+# id and name for the workflow (bundle id = domain.id)
+id: alfred-random-pocket-workflow
+
+# base domain
+domain: com.kadoppe
+
+name: Random Pocket
+description: Search and randomly select URLs in Pocket
+created_by: Kohei Kadowaki
+website: https://github.com/kadoppe/alfred-random-pocket-workflow
+
+## development config
+
+# path is the relative path to the workflow in the project root
+path: workflow
+
+# If you are using Alfred's advanced Dropbox sync, indicate the path shown in
+# Alfred Preferences > Advanced > Syncing:
+dropbox: ~/Dropbox
