@@ -5,4 +5,4 @@ Alfred2 Workflow for Searching and randomly selecting URLs in Pocket.
 
 ## Requirements
 
-You need to install Pocket.app from Mac App Store.
+You need to install Pocket.app from Mac App Store and sign in to Pocket using the app.
