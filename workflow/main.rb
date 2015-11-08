@@ -26,7 +26,7 @@ Alfred.with_friendly_error do |alfred|
   db = SQLite3::Database.open(copy_db_path)
 
   query = <<-SQL
-    SELECT title, url
+    SELECT title, url, item_id
     FROM items
   SQL
 
@@ -61,12 +61,13 @@ Alfred.with_friendly_error do |alfred|
   db.execute(query) do |row|
     title = row[0]
     url = row[1]
+    item_id = row[2]
 
     fb.add_item({
       uid: 'pocket.result',
       title: title,
       subtitle: url,
-      arg: url,
+      arg: 'https://getpocket.com/a/read/'+item_id.to_s,
       valid: 'yes'
     })
   end
