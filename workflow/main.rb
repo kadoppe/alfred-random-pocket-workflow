@@ -67,7 +67,7 @@ Alfred.with_friendly_error do |alfred|
       uid: 'pocket.result',
       title: title,
       subtitle: url,
-      arg: 'https://getpocket.com/a/read/'+item_id.to_s,
+      arg: 'https://getpocket.com/a/read/' + item_id.to_s,
       valid: 'yes'
     })
   end
